@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات گرمایشی و سرمایشی - اوستا سرویس</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005ba1;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .service {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #0078d4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .language-selector {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .language-selector a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0078d4;
+        }
+        .language-selector a:hover {
+            text-decoration: underline;
+        }
+        .payment {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .payment button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .payment button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>اوستا سرویس - خدمات تخصصی گرمایشی و سرمایشی</h1>
+        <p>تعمیر، سرویس و نصب انواع پکیج دیواری و کولرهای گازی در منطقه عمرانیه</p>
+    </header>
+
+    <nav>
+        <a href="#services">خدمات</a>
+        <a href="#gallery">گالری</a>
+        <a href="#contact">تماس با ما</a>
+        <a href="#about">درباره ما</a>
+    </nav>
+
+    <div class="language-selector">
+        <span>زبان: </span>
+        <a href="#">فارسی</a>
+        <a href="#">ترکی</a>
+        <a href="#">انگلیسی</a>
+        <a href="#">عربی</a>
+        <a href="#">روسی</a>
+    </div>
+
+    <div class="container">
+        <section id="services">
+            <h2>خدمات ما</h2>
+            <div class="service">
+                <h3>تعمیر پکیج دیواری</h3>
+                <p>ارائه خدمات تعمیر تخصصی برای انواع پکیج‌های دیواری با استفاده از قطعات اصلی.</p>
+            </div>
+            <div class="service">
+                <h3>سرویس و نگهداری</h3>
+                <p>سرویس‌های دوره‌ای برای افزایش عمر مفید سیستم‌های گرمایشی و سرمایشی.</p>
+            </div>
+            <div class="service">
+                <h3>تمیز کردن رادیاتورها</h3>
+                <p>تمیز کردن کامل رادیاتورها برای بهبود عملکرد گرمایشی.</p>
+            </div>
+            <div class="service">
+                <h3>تشخیص عیب و رفع مشکلات</h3>
+                <p>تشخیص حرفه‌ای مشکلات پکیج‌ها و کولرهای گازی و ارائه راه‌حل مناسب.</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>گالری تصاویر</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="نمونه کار 1">
+                <img src="image2.jpg" alt="نمونه کار 2">
+                <img src="image3.jpg" alt="نمونه کار 3">
+                <img src="image4.jpg" alt="نمونه کار 4">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>تماس با ما</h2>
+            <p>برای اطلاعات بیشتر یا درخواست خدمات با ما تماس بگیرید:</p>
+            <ul>
+                <li>تلفن: <strong>552-864-7582</strong></li>
+                <li>ایمیل: <strong>info@ustaservice.com</strong></li>
+                <li>آدرس: استانبول، عمرانیه، خیابان اصلی، پلاک 123</li>
+            </ul>
+            <form>
+                <label for="name">نام:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">ایمیل:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">پیام:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">ارسال</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>درباره ما</h2>
+            <p>ما تیمی متخصص با تجربه بیش از ۱۰ سال در ارائه خدمات گرمایشی و سرمایشی هستیم و کیفیت خدمات خود را تضمین می‌کنیم.</p>
+        </section>
+
+        <section id="payment">
+            <h2>پرداخت آنلاین</h2>
+            <div class="payment">
+                <p>برای سهولت در پرداخت هزینه خدمات می‌توانید از درگاه آنلاین ما استفاده کنید:</p>
+                <button onclick="alert('پرداخت آنلاین به زودی فعال خواهد شد!')">پرداخت آنلاین</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 اوستا سرویس - خدمات تخصصی گرمایشی و سرمایشی. تمامی حقوق محفوظ است.</p>
+    </footer>
+</body>
+</html>
